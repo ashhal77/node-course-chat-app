@@ -11,5 +11,5 @@ const port = process.env.PORT || 3000;
 
 
 app.listen(3000, ()=>{
-	console.log(`server is up pn port ${port}`);
+	console.log(`the server is up pn port ${port}`);
 });
