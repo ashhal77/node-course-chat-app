@@ -10,6 +10,6 @@ const port = process.env.PORT || 3000;
 
 
 //comment
-app.listen(3000, ()=>{
+app.listen(port, ()=>{
 	console.log(`the server is up pn port ${port}`);
 });
