@@ -7,5 +7,17 @@ return {
 };
 };
 
+var generateLocationMessage = (from, latitude, longitude)=>{
 
-module.exports = {generateMessage};
+return {
+
+	from, 
+	url: `https://www.google.com/maps?q=${latitude},${longitude}`, 
+	createdAt: new Date().getTime()
+
+};
+
+};
+
+
+module.exports = {generateMessage, generateLocationMessage};
