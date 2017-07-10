@@ -48,8 +48,8 @@ function scrollToBottom() {
   socket.on('updateUserList', function(users){
     var ol = jQuery('<ol></ol>');
 
-    users.forEach(function () {
-      ol.append(jQuery('<li></li>').text(users));
+    users.forEach(function (user) {
+      ol.append(jQuery('<li></li>').text(user));
 
     });
 
@@ -98,7 +98,6 @@ function scrollToBottom() {
     var messageTextbox = jQuery('[name=message');
 
 		socket.emit('createMessage', {
-			from: 'User', 
 			text: messageTextbox.val()
 		}, function() {
       
